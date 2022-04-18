@@ -1,0 +1,30 @@
+{
+  "name": "@chaingate/chaingate-js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
+  "scripts": {
+    "prepublish": "tsc",
+    "dev:server": "node --loader ts-node/esm ./nodejs-server/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHainGate/chaingate-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CHainGate/chaingate-js/issues"
+  },
+  "homepage": "https://github.com/CHainGate/chaingate-js#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.24",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "ts-node": "^10.7.0"
+  },
+  "type": "module"
+}

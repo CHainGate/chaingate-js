@@ -10,7 +10,9 @@
     "esModuleInterop": true,
     "moduleResolution": "Node"
   },
-  "include": ["src"],
+  "include": [
+    "main"
+  ],
   "exclude": [
     "node_modules",
     "dist"

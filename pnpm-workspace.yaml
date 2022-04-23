@@ -1,0 +1,4 @@
+packages:
+  - 'main/**'
+  - 'nodejs-server/**'
+  - 'frontend/react-my-app/**'

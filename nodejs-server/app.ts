@@ -1,6 +1,6 @@
 import express from 'express'
 import bodyParser from "body-parser";
-import crypto from "crypto"
+import { createHmac } from "crypto"
 import 'dotenv/config'
 import { ChaingateItem } from '../dist/nodejs-server/app';
 const app = express()
@@ -41,7 +41,7 @@ app.get('/signature/:productId', (req, res) => {
         return res.sendStatus(404)
     }
     // @ts-ignore
-    const hmac = crypto.createHmac('sha512', process.env.API_KEY);
+    const hmac = createHmac('sha512', process.env.API_KEY);
     let chaingateItem: ChaingateItem = {
         price_amount: item.price,
         price_currency: item.currency,
@@ -57,7 +57,7 @@ app.get('/signature/:productId', (req, res) => {
 app.post('/webhook', (req, res) => {
     const params = req.body.data;
     // @ts-ignore
-    const hmac = crypto.createHmac('sha512', process.env.API_KEY);
+    const hmac = createHmac('sha512', process.env.API_KEY);
     hmac.update(JSON.stringify(params, Object.keys(params).sort()));
     const signature = hmac.digest('hex');
     if (signature === req.body.signature) {

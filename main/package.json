@@ -1,0 +1,33 @@
+{
+  "name": "@chaingate/chaingate-js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/mod.js",
+  "types": "dist/types.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "dev": "rollup -c --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHainGate/chaingate-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CHainGate/chaingate-js/issues"
+  },
+  "homepage": "https://github.com/CHainGate/chaingate-js#readme",
+  "type": "module",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.1.0",
+    "@rollup/plugin-typescript": "^8.3.2",
+    "rollup": "^2.70.2",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-dts": "^4.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.2"
+  }
+}

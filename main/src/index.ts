@@ -1,6 +1,6 @@
 import { ChaingateItem } from './types';
 
-class CHainGate {
+export class CHainGate {
   apiKey: string;
   rootElement: string;
   chaingateEndpoint: string;

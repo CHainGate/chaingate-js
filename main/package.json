@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "main": "dist/mod.js",
-  "types": "dist/types.d.ts",
+  "types": "dist/types/mod.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",

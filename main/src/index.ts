@@ -12,7 +12,7 @@ export class CHainGate {
   }
 
   render() {
-    let html = "<h1>works</h1>"
+    let html = `<h1>works test</h1>`
     let rootElement = document.querySelector(this.rootElement)
     if(rootElement) {
       rootElement.innerHTML = html
